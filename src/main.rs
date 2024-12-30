@@ -17,6 +17,7 @@ fn main() {
             handle_connection(stream);
         });
     }
+    print!("Shutting down.")
 }
 fn handle_connection(mut stream: TcpStream) {
     let buf_reader = BufReader::new(&mut stream);
